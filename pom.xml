@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ppuskar.spring.cloud</groupId>
+	<artifactId>pp-spring-cloud</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>pp-spring-cloud-eureka-server</module>
+		<module>pp-spring-cloud-service-a</module>
+		<module>pp-spring-cloud-service-c</module>
+		<module>pp-spring-cloud-eureka-generic-client</module>
+	</modules>
+
+	<name>Spring Cloud Eureka</name>
+	<description>Spring Cloud Eureka Server and Sample Clients</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+		<spring-boot-maven-plugin.version>1.4.2.RELEASE</spring-boot-maven-plugin.version>
+		<spring-session.version>1.2.2.RELEASE</spring-session.version>
+		<spring-cloud-dependencies.version>Brixton.SR7</spring-cloud-dependencies.version>
+		<spring-cloud-starter-eureka.version>1.2.3.RELEASE</spring-cloud-starter-eureka.version>
+		<spring-cloud-starter-feign.version>1.2.3.RELEASE</spring-cloud-starter-feign.version>
+		<spring-boot-starter-web.version>1.4.2.RELEASE</spring-boot-starter-web.version>
+		<maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+		<spring-boot-maven-plugin.version>1.4.2.RELEASE</spring-boot-maven-plugin.version>
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin.version}</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<version>${spring-boot-maven-plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

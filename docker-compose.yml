@@ -1,0 +1,19 @@
+version: '3'
+services:
+  rest-service-a:
+    image: pp-spring-cloud-service-a
+    ports:
+     - "8080:8080"
+    depends_on:
+     - eureka-server
+  rest-service-c:
+    image: pp-spring-cloud-service-c
+    ports:
+     - "8080:8080"
+    depends_on:
+     - rest-service-a
+
+  eureka-server:
+    image: pp-spring-cloud-eureka-server
+    ports:
+     - "8761:8761"

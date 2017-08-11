@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-rest-service-C
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
+  instance:
+    preferIpAddress: true
