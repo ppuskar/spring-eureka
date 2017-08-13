@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<!-- <groupId>com.ppuskar.spring.cloud.generic-client</groupId> -->
-	<artifactId>pp-spring-cloud-eureka-generic-client</artifactId>
+	<artifactId>spring-rest-client</artifactId>
 	<!-- <version>0.0.1-SNAPSHOT</version> -->
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->

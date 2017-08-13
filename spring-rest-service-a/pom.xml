@@ -6,17 +6,21 @@
 		<artifactId>pp-spring-cloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<groupId>com.ppuskar.spring.cloud.service</groupId>
+	<artifactId>spring-rest-service-a</artifactId>
 
-
-	<artifactId>pp-spring-cloud-eureka-server</artifactId>
-	<name>Spring Cloud Eureka Server</name>
-	<description>Spring Cloud Eureka Server Demo</description>
-
+	<properties>
+		<spring-cloud-dependencies.version>Brixton.SR7</spring-cloud-dependencies.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -31,12 +35,11 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -49,18 +52,19 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
-
-							<mainClass>com.ppuskar.spring.cloud.eureka.server.MyEurekaServerApp</mainClass>
+							<mainClass>com.ppuskar.spring.cloud.rest.service.DumbRestServiceApp</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
@@ -91,9 +95,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<properties>
-		<spring-cloud-dependencies.version>Brixton.SR7</spring-cloud-dependencies.version>
-		<spring-cloud-starter-eureka.version>1.2.3.RELEASE</spring-cloud-starter-eureka.version>
-	</properties>
 </project>

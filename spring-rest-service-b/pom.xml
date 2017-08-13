@@ -3,11 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.ppuskar.spring.cloud</groupId>
-		<artifactId>pp-spring-cloud</artifactId>
+		<artifactId>spring-eureka</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>pp-spring-cloud-service-c</artifactId>
+	<artifactId>spring-rest-service-b</artifactId>
 
+	<properties>
+		<spring-cloud-dependencies.version>Brixton.SR7</spring-cloud-dependencies.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -35,10 +38,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
@@ -60,6 +59,7 @@
 					</archive>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
@@ -91,9 +91,5 @@
 		</plugins>
 	</build>
 
-	<properties>
-		<spring-cloud-dependencies.version>Brixton.SR7</spring-cloud-dependencies.version>
-		<spring-cloud-starter-eureka.version>1.2.3.RELEASE</spring-cloud-starter-eureka.version>
-		<spring-boot-starter-web.version>1.4.2.RELEASE</spring-boot-starter-web.version>
-	</properties>
+
 </project>

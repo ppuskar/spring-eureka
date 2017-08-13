@@ -2,15 +2,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ppuskar.spring.cloud</groupId>
-	<artifactId>pp-spring-cloud</artifactId>
+	<artifactId>spring-eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>pp-spring-cloud-eureka-server</module>
-		<module>pp-spring-cloud-service-a</module>
-		<module>pp-spring-cloud-service-c</module>
-		<module>pp-spring-cloud-eureka-generic-client</module>
+		<module>spring-eureka-server</module>
+		<module>spring-rest-service-a</module>
+		<module>spring-rest-service-b</module>
+		<module>spring-rest-client</module>
 	</modules>
 
 	<name>Spring Cloud Eureka</name>
@@ -33,20 +33,22 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${maven-compiler-plugin.version}</version>
-					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
-					</configuration>
-				</plugin>
-				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
 					<version>${spring-boot-maven-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>
