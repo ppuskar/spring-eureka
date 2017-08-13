@@ -42,6 +42,7 @@ navigate to root of the parent project and do a
 `docker-compose up -d`
 
 It will launch all the containers(Eureka server as well as the rest service modules). 
+Verify if all the containers are up and running using command `docker ps`
 Open browser to check this url : http://localhost:8761/eureka
 
 The registered services will be visible in the eureka UI.
