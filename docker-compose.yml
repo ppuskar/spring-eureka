@@ -2,14 +2,10 @@ version: '3'
 services:
   rest-service-a:
     image: spring-rest-service-a
-#    ports:
-#     - "8080:8080"
     depends_on:
      - eureka-server
-  rest-service-c:
+  rest-service-b:
     image: spring-rest-service-b
-#    ports:
-#     - "9090:9090"
     depends_on:
      - rest-service-a
 
