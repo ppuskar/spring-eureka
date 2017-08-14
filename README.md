@@ -51,7 +51,8 @@ The registered services will be visible in the eureka UI.
 
 Click on the services to see the endpoints are wokring(you need to modify the url though).
 ## Fun part
-From Eureka UI, click on the **spring-rest-service-b** url, make call to /stackInfo
+From Eureka UI, click on the **spring-rest-service-b** url, A url (with resolved IP and port for service-b) will open up in a new tab with /info, update the URL to call /stackInfo instead.
+
 go back to your terminal and scale up **spring-rest-service-a** to run on 3 or may be 4 instances.
 
 `docker-compose scale rest-service-a=3`
