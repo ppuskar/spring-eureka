@@ -21,6 +21,7 @@ Endpoint : http://[host-address]:8080/sysinfo
 
 ### spring-rest-service-b
 A spring boot project which will do following things :
+
   a. Registers itself with eureka
   b. Make use of rest client (Spring restTemplate) to call **spring-rest-service-a** (Keeping in mind that multiple instances of this service is running)
   
