@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-rest-service-C
+    name: spring-rest-service-B
 server:
   port: 9090
 eureka:
