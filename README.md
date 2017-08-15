@@ -24,7 +24,7 @@ A spring boot project which will do following things :
 
   a. Registers itself with eureka
   
-  b. Make use of rest client (Spring restTemplate) to call **spring-rest-service-a** (Keeping in mind that multiple instances of this service is running)
+  b. Make use of rest client (Spring restTemplate) to call **spring-rest-service-a** using Eureka to resolve the address by service-name (Keeping in mind that multiple instances of this service is running)
   
 Endpoint : 
  
