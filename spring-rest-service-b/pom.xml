@@ -48,17 +48,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.ppuskar.spring.cloud.rest.service.ServiceCApp</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>com.spotify</groupId>
