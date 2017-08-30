@@ -8,7 +8,7 @@ Learned this stuff from https://cloud.spring.io/spring-cloud-netflix
 
 All the modules are dockerized and the environment will be up in less then 30 sec. Keep playing by scaling up services and observe load balancing in the output.
 
-## Requirements :
+### Requirements :
 Docker 17.X, docker-compose 14.X
 
 
