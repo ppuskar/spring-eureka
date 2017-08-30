@@ -54,7 +54,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<!-- Plugin to create docker images after build -->
 			<plugin>
 				<groupId>com.spotify</groupId>

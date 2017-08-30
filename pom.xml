@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ppuskar.spring.cloud</groupId>
-	<artifactId>spring-eureka</artifactId>
+	<artifactId>pp-spring-cloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -11,6 +11,7 @@
 		<module>spring-rest-service-a</module>
 		<module>spring-rest-service-b</module>
 		<module>spring-rest-client</module>
+		<module>spring-eureka-feign-client</module>
 	</modules>
 
 	<name>Spring Cloud Eureka</name>
